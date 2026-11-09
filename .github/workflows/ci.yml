@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  node:
+    name: Node ${{ matrix.node-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: ['22', '24']
+    steps:
+      - name: Obter o código
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - name: Preparar Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - name: Conferir a árvore declarada sem scripts de instalação
+        run: npm ci --ignore-scripts
+      - name: Testar modelo, arquivos e limites
+        run: npm test
+      - name: Gerar a distribuição estática sem dependências
+        run: npm run build
+      - name: Conferir módulos, lista pública, fontes e manifesto
+        run: npm run check
+
+  independent:
+    name: Verificador Python independente e conversor oficial Exolve
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter o código
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - name: Preparar Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Preparar Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - name: Conferir a árvore Node declarada
+        run: npm ci --ignore-scripts
+      - name: Testar o verificador independente somente com a biblioteca padrão
+        run: python3 -m unittest discover -s tests/python -v
+      - name: Preparar explicitamente o consumidor oficial fixado para QA
+        run: python3 tools/prepare-exolve.py --download
+      - name: Conferir offline os dez arquivos oficiais sem modificações
+        run: python3 tools/prepare-exolve.py --verify-local
+      - name: Conferir os dois IPUZ no conversor upstream em Node (prova parcial, sem navegador)
+        run: >-
+          node tools/check-exolve-conversion.mjs
+          --report local/qa/converter.json
+          fixtures/demo-activity.ipuz fixtures/demo-solution.ipuz

@@ -1,0 +1,42 @@
+{
+  "verified": true,
+  "scope": "Independent stdlib semantic checks of supplied files; browser provenance is separate evidence. No PNG is produced or claimed.",
+  "files": [
+    {
+      "name": "cruzadas-projeto.json",
+      "bytes": 2483,
+      "sha256": "519fae6606f80bb1f852da7233059d230985f065389d7a7e84ad3b1d3ba1d934"
+    },
+    {
+      "name": "cruzadas-atividade.ipuz",
+      "bytes": 3577,
+      "sha256": "506bfc024b526a3aecebf4f50955d706984c0f313992fc8648d974317c09423e"
+    },
+    {
+      "name": "cruzadas-gabarito.ipuz",
+      "bytes": 5898,
+      "sha256": "fe41f57bce549cbae572cbb49de399128126a585b687a0aad06202660e57a3ec"
+    },
+    {
+      "name": "cruzadas-atividade.svg",
+      "bytes": 30861,
+      "sha256": "a7aa901d610e293ca285cfb6f821d6b537fe00462a29b80713441e66ebafe463"
+    },
+    {
+      "name": "cruzadas-gabarito.svg",
+      "bytes": 33772,
+      "sha256": "7721a677a1aee04a81350f394c37200bf13acc98d7f6b11deb97bb681c11fbbc"
+    }
+  ],
+  "stats": {
+    "width": 15,
+    "height": 13,
+    "entries": 9,
+    "lightCells": 28,
+    "crossings": 8,
+    "components": 1,
+    "numbers": 8
+  },
+  "observedOn": "2026-11-09",
+  "provenance": "Five files downloaded through the Chrome UI; final SVGs redownloaded after word-wrap correction. Verified independently with Python stdlib. SVG raster renders inspected separately; IPUZ imported into official unmodified Exolve."
+}

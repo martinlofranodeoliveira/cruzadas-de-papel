@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.venv/
+local/
+.openai/
+.env
+.env.*
+__pycache__/
+*.pyc
+.dist-build-*/
+.impeccable/

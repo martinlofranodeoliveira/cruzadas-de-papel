@@ -1,0 +1,282 @@
+{
+  "version": "http://ipuz.org/v2",
+  "kind": [
+    "http://ipuz.org/crossword#1"
+  ],
+  "uniqueid": "demo-cotidiano-01",
+  "title": "Pequenas cenas do cotidiano",
+  "author": "LOFRANO TECNOLOGIA",
+  "intro": "Uma cruzada original para ligar lugares, ideias e objetos.",
+  "dimensions": {
+    "width": 15,
+    "height": 13
+  },
+  "block": "#",
+  "empty": 0,
+  "charset": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "puzzle": [
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      1,
+      0,
+      0,
+      0,
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      0,
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      2,
+      0,
+      0,
+      0,
+      3,
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      0,
+      "#",
+      "#",
+      "#",
+      0,
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      4,
+      0,
+      5,
+      0,
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      0,
+      "#",
+      0,
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      6,
+      0,
+      7,
+      0,
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      0,
+      "#",
+      0,
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      8,
+      0,
+      0,
+      0,
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ],
+    [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+    ]
+  ],
+  "clues": {
+    "Across": [
+      [
+        1,
+        "Lugar de morar, com porta, janelas &amp; histórias. (4)"
+      ],
+      [
+        2,
+        "Encontro de bancas, frutas e vozes na rua. (5)"
+      ],
+      [
+        4,
+        "Criação que pode ganhar forma em pintura, música ou dança. (4)"
+      ],
+      [
+        6,
+        "Companheira de viagem que leva roupas e lembranças. (4)"
+      ],
+      [
+        8,
+        "Líquido que mata a sede e rega a horta. (4)"
+      ]
+    ],
+    "Down": [
+      [
+        1,
+        "Bebida de grãos torrados que perfuma a cozinha. (4)"
+      ],
+      [
+        3,
+        "O que põe uma ideia em movimento; em 2 &lt; 3, comparar já é uma. (4)"
+      ],
+      [
+        5,
+        "Assunto que costura uma conversa ou um texto. (4)"
+      ],
+      [
+        7,
+        "Vizinha celeste que muda de aparência ao longo do mês. (3)"
+      ]
+    ]
+  }
+}

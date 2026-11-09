@@ -1,0 +1,31 @@
+* text=auto
+
+*.md text eol=lf
+*.json text eol=lf
+*.ipuz text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.svg text eol=lf
+*.txt text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Licenças upstream são preservadas byte a byte, inclusive o CRLF de Source Sans.
+assets/*-OFL.txt -text
+
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.gif binary
+*.pdf binary
+*.zip binary
